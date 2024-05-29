@@ -1,0 +1,50 @@
+.navh{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+.navh::after{
+    content: "";
+    position: absolute;
+    font-size: 90px;
+    bottom: -5px;
+    height: 2px;
+    border-radius: 50px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(255, 0, 115);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.navh:hover::after{
+    transform: scaleX(1.1);
+}
+
+.ul{
+    overflow: hidden;
+}
+
+.dynamic-text{
+    position: relative;
+}
+
+.info .dynamic-text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background: rgb(229, 231, 235);
+    border-left: 2px solid rgb(190, 24, 93);
+    animation: animate 4s steps(20) infinite;
+}
+@keyframes animate {
+    25%, 75%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>Hemal Chudasama</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-200">
+    <nav class="bg-blue-950 text-gray-200 flex justify-center lg:justify-end sm:justify-center md:justify-center ">
+        <ul class="lg:px-28 md:px-28 sm: py-4 flex lg:space-x-20 md:space-x-20 space-x-7 justify-end font-varela text-lg">
+            <li><a href="index.html" class="navh hover:font-black hover:text-pink-400 transition duration-300 active:text-pink-600 focus:text-pink-600">Home</a></li>
+            <li><a href="services.html" class="navh hover:font-black hover:text-pink-400 transition duration-300 active:text-pink-600 focus:text-pink-600">Services</a></li>
+            <li><a href="portfolio.html" class="navh hover:font-black hover:text-pink-400 transition duration-300 active:text-pink-600 focus:text-pink-600">Portfolio</a></li>
+            <li><a href="contact.html" class="navh hover:font-black hover:text-pink-400 transition duration-300 active:text-pink-600 focus:text-pink-600">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="">
+        <img class="absolute left-0 sm:left-16 h-auto w-auto lg:left-1/2 lg:top-40 z-10" src="web-home.svg" alt="pic">
+        <img class="absolute top-36 left-24 sm:top-52 sm:left-64 h-48 w-48 sm:h-72 sm:w-72 rounded-full lg:left-2/3 lg:top-60 z-10 drop-shadow-2xl ring-4 ring-purple-800" src="Hemal.jpg" alt="pic">
+    </div>
+
+    <div class="info absolute bottom-10 left-5 sm:bottom-32 lg:bottom-16 sm:mx-20 lg:mx-20 lg:my-48 font-rubik">
+        <p class="text-xl sm:text-5xl text-gray-700">Hey, it's</p>
+        <p class="text-3xl sm:text-7xl font-extrabold text-gray-800">Hemal Chudasama</p>   
+           <ul class="dynamic-text text-xl sm:text-5xl font-bold text-pink-700 flex w-max h-max">
+                <li><span>UI/UX Designer</span></li>
+                <!-- <li><span>Frontend Developer</span></li>
+                <li><span>Graphic Designer</span></li> -->
+           </ul>
+
+        <p class="text-lg text-gray-700 w-64 md:w-1/2 py-5 ">I am a Frontend Developer and UI/UX & Graphic designer with passionate about creativity and a strong desire to learn and grow in this field.</p>
+        
+        <div class="social flex w-48 space-x-5 bg-gray-200 ">
+            <a class="outline outline-offset-2 outline-2 rounded-full hover:bg-pink-500 transition duration-300 hover:outline-pink-500" href="mailto:hcgd252@gmail.com"><img  src="./icons/gmail.png" alt="gmail"></a>
+            <a class="outline outline-offset-2 outline-2 rounded-full hover:bg-pink-500 transition duration-300 hover:outline-pink-500" href="https://www.linkedin.com/in/hemal-chudasama-912646252"><img src="./icons/linkedin.png" alt="linkedin"></a>
+            <a class="outline outline-offset-2 outline-2 rounded-full hover:bg-pink-500 transition duration-300 hover:outline-pink-500" href="https://github.com/HemalChudasama3"><img src="./icons/github.png" alt="github"></a>
+            <a class="outline outline-offset-2 outline-2 rounded-full hover:bg-pink-500 transition duration-300 hover:outline-pink-500" href="https://instagram.com/hemal_3.3?igshid=NGExMmI2YTkyZg=="><img src="./icons/instagram.png" alt="instagram"></a>
+            <!-- <a class="" download href=""></a> -->
+        </div>
+        
+    </div>
+
+</body>
+    <script>
+        const text = document.querySelector(".dynamic-text");
+
+        const textload = () => {
+            setTimeout(() => {
+                text.textContent = "UI/UX Designer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Frontend Developer";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Graphic Designer";
+            }, 8000);
+        }
+
+        textload();
+        setInterval(textload, 12000);
+    </script>
+</html>
